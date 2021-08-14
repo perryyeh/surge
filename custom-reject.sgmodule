@@ -1,0 +1,9 @@
+#!name= 自定义reject MITM
+#!desc=最后更新时间 2021-08-13 10:00:00
+
+[Rule]
+URL-REGEX,^http:\/\/m\.txt101\.com\/wap\/,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/www\.zhihu\.com\/api\/v3\/oauth\/account\/unlock\/request,REJECT-TINYGIF
+
+[MITM]
+hostname = %APPEND% m.txt101.com
