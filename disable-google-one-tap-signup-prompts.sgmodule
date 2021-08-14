@@ -1,0 +1,8 @@
+#!name= disable Google One Tap sign-up prompts
+#!desc=last update 2021-08-14 00:00:00
+
+[Rule]
+URL-REGEX,^https?:\/\/accounts\.google\.com\/gsi\/,REJECT-TINYGIF
+
+[MITM]
+hostname = %APPEND% accounts.google.com
